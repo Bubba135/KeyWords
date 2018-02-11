@@ -15,11 +15,11 @@ int main()
 	const int NUM_WORDS = 5;
 	const string WORDS[NUM_WORDS][NUM_FIELDS] =
 	{
-		{"wall", "Do you feel you're banging your head against something?"},
-		{"glasses", "These might help you see the answer."},
-		{"labored", "Going slowly, is it?"},
+		{"west", "The direction toward the point of the horizon where the sun sets."},
+		{"sandbar", "Narrow sandbank."},
+		{"civilization", "The stage of human social development."},
 		{"persistent", "Keep at it."},
-		{"jumble", "It's what the game is all about."}
+		{"israel", "A Jewish state."}
 	};
 
 	srand(static_cast<unsigned int>(time(0)));
@@ -39,14 +39,14 @@ int main()
 	}
 
 	//For the player
-	cout << "\t\t\tWelcome to Word Jumble!\n\n";
-	cout << "Unscramble the letters to make a word.\n";
-	cout << "Enter 'hint' for a hint.\n";
-	cout << "Enter 'quit' to quit the game.\n\n";
-	cout << "The jumble is: " << jumble;
+	cout << "\t\t\tWelcome to The Code Bracker!\n\n";
+	cout << "Unscramble the letters that we intersept form the eastern world.\n";
+	cout << "Enter 'hint' if you need help from another agent.\n";
+	cout << "Enter 'quit' if you are not up to the job.\n\n";
+	cout << "The Secret Word is: " << jumble;
 
 	string guess;
-	cout << "\n\nYour Guess: ";
+	cout << "\n\nYour Final Answer: ";
 	cin >> guess;
 
 	while ((guess != theWORD) && (guess != "quit"))
@@ -66,10 +66,10 @@ int main()
 		
 	if (guess == theWORD)
 	{
-		cout << "\nThat's it! You Guessed it!\n";
+		cout << "\nThat's it! You are up for a promotes!\n";
 	}
 
-	cout << "\nThanks for Playing.\n";
+	cout << "\nThanks for your good work.\n";
 
 	system("pause");
     return 0;
